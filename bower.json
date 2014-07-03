@@ -1,0 +1,21 @@
+{
+  "name": "js-basic-auth",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ahmednuaman/js-basic-auth",
+  "authors": [
+    "Ahmed Nuaman <ahmed@ahmednuaman.com>"
+  ],
+  "description": "A JavaScript test to see if one can log in to basic auth via XHR",
+  "license": "Apache v2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
