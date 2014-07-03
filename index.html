@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Auth test</title>
+</head>
+<body>
+  <form id="auth-form">
+    <label>Username: <input type="text" placeholder="foo"></label>
+    <br>
+    <label>Password: <input type="password"></label>
+    <br>
+    <button type="submit">Log in</button>
+  </form>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script>
+  $(document).ready(function () {
+    var form = $('#auth-form'),
+        password = $('input[type=password]', form),
+        username = $('input[type=text]', form);
+
+    form.submit(function (event) {
+      event.preventDefault();
+
+      $.ajax({
+        url: '/secret',
+        type: 'get',
+        headers: {
+          'Authorization': 'Basic ' + btoa(username.val() + ':' + password.val())
+        },
+        success: function (data, status, xhr) {
+          alert(data);
+        },
+        error: function () {
+          console.log(arguments);
+        }
+      });
+    });
+  });
+  </script>
+</body>
+</html>

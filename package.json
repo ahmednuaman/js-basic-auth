@@ -2,9 +2,9 @@
   "name": "js-basic-auth",
   "version": "0.0.1",
   "description": "A JavaScript test to see if one can log in to basic auth via XHR",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ahmednuaman/js-basic-auth",
   "devDependencies": {
     "http-auth": "^2.1.8"
+  },
+  "dependencies": {
+    "express": "^4.4.5"
   }
 }
