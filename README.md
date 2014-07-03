@@ -1,4 +1,4 @@
-# JS Basic auth example
+# JS basic auth example
 
 ![](http://i.imgur.com/DGQufN2.jpg)
 
