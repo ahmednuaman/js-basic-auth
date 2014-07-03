@@ -4,6 +4,7 @@
   "description": "A JavaScript test to see if one can log in to basic auth via XHR",
   "main": "server.js",
   "scripts": {
+    "postinstall": "bower install",
     "start": "node server.js"
   },
   "repository": {
